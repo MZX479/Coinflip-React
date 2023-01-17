@@ -5,6 +5,7 @@ html {
   border: 0;
   padding: 0;
   box-sizing: border-box;
+  position: sticky;
 }
 
 .mainWrapper {
@@ -24,17 +25,36 @@ html {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.winnerString {
+.logo {
+  margin-top: 40px;
   font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+.notifySection {
+  margin-top: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.notify {
+  font-size: 25px;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+.coinPic {
+  height: 13vh;
 }
 
 .winnerSection {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 27vh;
+  height: 30vh;
 }
 
 .userBalanceSection {
@@ -55,19 +75,113 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 27vh;
-  flex-direction: row;
+  height: 30vh;
+  flex-direction: column;
+}
+
+.buttonUserChoicesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.headsButton {
+  height: 5vh;
+  width: 70%;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Geneva, Verdana, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.headsButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(142, 227, 142) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.headsButton:active {
+  transform: translateY(2px);
+}
+
+.tailsButton {
+  margin-right: 40px;
+  height: 5vh;
+  width: 70%;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Geneva, Verdana, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.tailsButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(142, 227, 142) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.tailsButton:active {
+  transform: translateY(2px);
+}
+
+.uxSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .textBet {
   margin-right: 15px;
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+.finalChoice {
+  font-size: 20px;
+  font-family: Geneva, Verdana, sans-serif;
+  height: 4.7vh;
+  width: 10%;
+  margin-right: 30px;
+  border: 2px solid rgb(142, 227, 142);
+  border-radius: 10px;
+  text-align: center;
 }
 
 .userBet {
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
   height: 4vh;
   width: 10%;
   margin-right: 30px;
@@ -88,7 +202,7 @@ html {
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -127,7 +241,7 @@ html {
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -167,7 +281,7 @@ html {
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -196,13 +310,13 @@ html {
   width: 100%;
   padding-bottom: 20px;
   font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
   padding-bottom: 50px;
 }
 
 .balance {
   font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Geneva, Verdana, sans-serif;
   width: 100%;
   padding-bottom: 10px;
 }
