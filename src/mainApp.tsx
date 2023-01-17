@@ -1,4 +1,5 @@
-import "./mainApp.css";
+import "./css/mainContainer.css";
+import "./css/userBalance.css";
 import { useState } from "react";
 import coinImage from "./images/coin.svg";
 import tailsPng from "./images/tails.png";
@@ -137,7 +138,7 @@ const App = () => {
         </section>
         <section className="userBalanceSection">
           <span className="userCurrency">Your coins:</span>
-          <div className="ballanceSection">
+          <div className="balanceSection">
             <span className="balance">{dataActions.coins} </span>
             <img src={coinImage} className="coinImg" />
           </div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export const Actions = () => {
   let [coins, setCoins] = useState(100);
+
   const resetCoins = () => {
     return setCoins(0);
   };
